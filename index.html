@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIZ
+    </title>
+</head>
+<body>
+    <form id="login" method="post" >
+        <table>
+            <tr>
+                <td>Nome</td>
+                <td>Cognome</td>
+            </tr>
+            <tr>
+                
+                <td><input type="text" name="" placeholder="Scrivi qui"></td>
+                <td><input type="text" name="" placeholder="Scrivi qui"></td>
+                    
+                
+            </tr>
+        </table>
+        <div>Password</div>
+        <input type="password" required minlength="7">
+        <div>Email</div>
+        <input type="email">
+    <input type="submit" name="" value="INVIO">
+    </form>
+
+    <form id="rispostaUno"  method="post" style="display: none;">
+        <div class="">
+            Quanto fa 3+3?
+        </div>
+        <input type="text" name="" placeholder="inserisci numero">
+        <input type="submit" name="" value="INVIO">
+    </form>
+
+    <form id="rispostaDue"  method="post" style="display: none;">
+        <div class="">
+            Palermo e' capoluogo di quale regione?
+        </div>
+        <select name="" class="">
+            <option selected value="Molise">Molise</option>
+            <option value="Sicilia">Sicilia</option>
+            <option value="Sardegna">Sardegna</option>
+
+            
+        </select>
+        <input type="submit" value="INVIO">
+    </form>
+
+    <form id="rispostaTre"  method="post" style="display: none;">
+        <div>
+            Quale squadra ha vinto lo scudetto in Italia nell'anno 2022/2023?
+        </div>
+        <div>
+            <input value="Cagliari" type="radio" name="calcio">Cagliari
+        </div>
+        <div>
+            <input value="Milan" type="radio" name="calcio" checked>Milan
+        </div>
+        <div>
+            <input value="Napoli" type="radio" name="calcio">Napoli
+        </div>
+        <input type="submit" value="INVIO">
+    </form>
+
+    
+    <div id="totale" style="display: none;">
+        
+        <span>Corrette:</span>
+        <br>
+        <span>Sbagliate:</span>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
